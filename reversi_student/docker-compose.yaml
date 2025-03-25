@@ -1,0 +1,7 @@
+services:
+  reversi_minmax:
+    container_name: reversi_student
+    build: .
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+    ports:
+      - "8000:80"
